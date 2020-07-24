@@ -198,12 +198,22 @@ console.log(toArray(1,2,3,4,5,5,6,6,6,6))
 7. De-structing arrays: 
 
 ```js
+    // to use values of arrys or objects without copying the content data with the defined type, but only data it self. 
     // if using the HOBBIES example 
     const [hobby1, hobby2] = hobbies;
     console.log(hobby1, hobby2); // print two elements separated from the array. (sport cook code)
     // in the declaration of this example, names are not important, since hobby1/2 are pointing to the number of elements. 
 ```
 
+8. How to work with Asynchronized code 
 
-
+```js
+setTimeout( () => {
+    console.log('Timer is Done!');
+}, 2000 ); // 2 seconds delay 
+console.log('hello');
+console.log('hi!');
+// Result: hello, hi, Time is Done!
+// READ MORE ABOUT Promisses
+```
 
