@@ -73,8 +73,6 @@ Q: What is NodeJS ?
 
 ## JavaScript Refresh 
 
-## JavaScript Refresh 
-
 #### JavaScript Summary 
 
 1. Weakly Typed Language: 
