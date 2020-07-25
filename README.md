@@ -328,6 +328,7 @@ const server = htpp.create.server((res,req) => {
         });
     
     // Here is where we get the content and write to file 
+    // This is a CallBack
         req.on('end', () => {
             const parsedBody = Buffer.concat(body).toString();
             const message = parsedBody.split('=')[1];
@@ -339,6 +340,22 @@ const server = htpp.create.server((res,req) => {
     res.setHeader('Location', '/');
     return res.end(); 
 
+});
+```
+- Blocking and non-blocking code 
+
+In the server_v1.js sample, built in samples folder of this server, we use res.writeFileSync() but this is wrong, because all process that are in queue for execution, will not be executed until the file content is written. ( for large files eg. )
+Following the server file example we need to fix this: 
+
+```js
+req.on('end', () => {
+    // ...
+    // not really error handling 
+    fs.writeFile('message.txt', message, (err) => {
+        res.statusCode = 302;
+        res.setHeader('Location', '/');
+        return res.end();
+    });
 });
 ```
 
