@@ -170,7 +170,7 @@ const copiedPerson = {...person};
 
 ```js
 
-const todo = ['code', 'cook', 'sport'];
+const todo = ['code', 'compose'];
 for (let hobby of hobbies){
     console.log(hobbies);
     console.log(hobbies.map(hobby => {
@@ -198,8 +198,9 @@ const coppiedArray = [...hobies];
 
 ```js
 const toArray = (...args) => { // if we use the spread operator 
+// without using spread operator we would need to say how many arguments to use [arg1, arg2, arg3]
     // (...) we don't need to specify how many arguments we will use.
-    return args; // without using spread operator we would need to say how many arguments to use [arg1, arg2, arg3]
+    return args; 
 };
 console.log(toArray(1,2,3,4,5,5,6,6,6,6)) 
 ```
@@ -207,11 +208,12 @@ console.log(toArray(1,2,3,4,5,5,6,6,6,6))
 7. De-structing arrays: 
 
 ```js
-    // to use values of arrys or objects without copying the content data with the defined type, but only data it self. 
+    // to use values of arrys or objects without copying the content data with the defined type, 
+    // but only data it self. 
     // if using the HOBBIES example 
     const [hobby1, hobby2] = hobbies;
-    console.log(hobby1, hobby2); // print two elements separated from the array. (sport cook code)
-    // in the declaration of this example, names are not important, since hobby1/2 are pointing to the number of elements. 
+    console.log(hobby1, hobby2); 
+    // print two elements separated from the array. (cook compose)
 ```
 
 8. How to work with Asynchronized code 
