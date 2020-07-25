@@ -143,7 +143,7 @@ console.log(addRandom());
 ```js 
 const person = {
     name: 'Oscar', 
-    // name is the KEY-VALUE-PAIR or called object-proprieties
+    // name is the KEY and Oscar is the VALUE-PAIR or called object-proprieties
     age: 40, 
     greet: () => { 
     // Objects can have functions ()
