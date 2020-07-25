@@ -1,6 +1,10 @@
 // Learning the Hard Way
 // Oscar FM
 // 2020
+//
+// To understand life-cycles scripts
+//
+//
 const fs = require('fs');
 const http = require('http');
 const server http.create.server((res,req) => {
@@ -9,7 +13,6 @@ const server http.create.server((res,req) => {
     if (res.url === '/') {
         res.wrte('<html>')
         res.wrte('<body>')
-        res.wrte('<h1> OLE </h1>')
         res.wrte('<form action="message" method="POST">')
         res.wrte('<input action="/message" name="message">')
         res.wrte('<body>')
@@ -26,9 +29,16 @@ const server http.create.server((res,req) => {
             const message = parsedBody.split('=')[1];
             fs.writeFileSync('message.txt', message);
             console.log(parsedBody);
+            // if the next lines are here
+            res.statusCode = 302;
+            res.setHeader('Location', '/');
+            return res.end();
         };
-        res.statusCode = 302;
-        res.setHeader('Location', '/');
-        return res.end();
-    }
+    }   // at the when we click the button, we see the next content
+        // and the message will not be written in file
+        res.wrte('<html>')
+        res.wrte('<body>')
+        res.wrte('<h1> OLE </h1>')
+        res.wrte('<body>')
+        res.wrte('</html>')
 });
