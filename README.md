@@ -91,7 +91,8 @@ Q: What is NodeJS ?
 var name = 'Oscar'; // Variable assigned with strings
 var age = 40; // Variable assigned with numbers
 var haveHobbies = true; // Variable assigned as Boolean
-function userDetails(userName, userAge, userHasHobby) { // Scoped local variables - Not global
+function userDetails(userName, userAge, userHasHobby) { 
+// Scoped local variables - Not global
     return (
     'Name is: ' 
     + userName 
@@ -128,7 +129,8 @@ const add = (a,b) => a + b;
 console.log(add(10,10));
 
 // Special Cases:
-const addOne = a => a+1; // when function argument is unique, we don't need to use ()
+const addOne = a => a+1; 
+// when function argument is unique, we don't need to use ()
 console.log(addOne(2020));
 
 // function without a name, with pre-defined value 
@@ -140,10 +142,13 @@ console.log(addRandom());
 
 ```js 
 const person = {
-    name: 'Oscar', // name is the KEY-VALUE-PAIR or called object-proprieties
+    name: 'Oscar', 
+    // name is the KEY-VALUE-PAIR or called object-proprieties
     age: 40, 
-    greet: () => { // Objects can have functions ()
-        console.log('I am ' + this.name); // 'this' keyword is used to access the GLOBAL KEY-proprieties
+    greet: () => { 
+    // Objects can have functions ()
+        console.log('I am ' + this.name); 
+    // 'this' keyword is used to access the GLOBAL KEY-proprieties
     }
 };
 
@@ -151,7 +156,8 @@ person.greet(); // this will print (I am undefined)
 
 // To fix this problem we use can define a functions as: 
 
-greet() { // inside person object, function become a method of person object
+greet() { 
+// inside person object, function become a method of person object
     console.log(this.name);
 };
 
@@ -173,14 +179,19 @@ for (let hobby of hobbies){
 }
 
 // note about arrays
-// if I add or remove content to the **array** which uses 'const' keyword, there is not error because we didn't change the type 
+// if I add or remove content to the **array** which uses 'const' keyword, 
+// there is not error because we didn't change the type of the variable 
 // example: 
-hobbies.push('Book Reader'); // this will not print-out an error because we didn't change the type of hobbies. 
+hobbies.push('Book Reader'); 
+// this will not print-out an error because we didn't change the type of hobbies. 
 
 // About arrays declarations and recycling
-const copiedArr = hobbies.slice(); // Copy Old Array into new
-const coppiedAry = [hobbies]; // Create a new Array with a nasted copy of the old array. 
-const coppiedArray = [...hobies]; // create new Array based on the old one. 
+const copiedArr = hobbies.slice(); 
+// Copy Old Array into new
+const coppiedAry = [hobbies]; 
+// Create a new Array with a nasted copy of the old array. 
+const coppiedArray = [...hobies]; 
+// create new Array based on the old one. 
 ```
 
 6. The Spread Operator ( ... )
@@ -214,4 +225,71 @@ console.log('hi!');
 // Result: hello, hi, Time is Done!
 // READ MORE ABOUT Promisses
 ```
+## NodeJS Basics
+- "The Essential Knowledge We Need"
+- How the Web Works
+    1. User / Client ( Browser )
+    2. Domain.com 
+    3. Browser Send Request to server ( domain ) 
+    4. Server send response ( can be HTML or files / json / etc.. ) - In this case Using NodeJS
+    5. We are using HTTP / HTTPS ( http + SSL )
+
+- Creating a Server 
+
+    - "We can write a server from scratch or import built-in modules to help us on that job"
+
+    - Core Modules
+        1. http: Start a server and send requests
+        2. https: Start a server and send requests ( secure way )
+        3. fs: Access hard-disk (write files or read files)
+        4. path: ??? 
+        5. os: Operating System features 
+
+- Event Loops ( life cycle ) in NodeJS 
+    1. Start script
+    2. Parse Code - register variables and functions
+    3. Event Loop - keeps running until server is stoped. 
+    4. Event Loop - are integrated in almost everything that nodeJS can do.
+    5. To exit server, we can force with ctrl+c or defining in code with 'process.exit()' 
+
+- First Server: 
+```js
+// Create a local HTTP Server with NodeJS 
+// Comments step by step 
+
+// Impor HTTP core module 
+const http = require('http');
+
+// Create function 
+// Some features have integrated a ETERNAL Loop-event
+// Server features is one of those. 
+
+const function = http.create.server((res, req) => {
+    // log browser object 
+    // console.log(req); // Our Client REQUEST (GET)
+
+    // build a answer - Our Server RESPONSE (POST)
+    // request extra information of Client 
+    console.log(req.url, req.method, req.headers); // (GET)
+
+    // Set Header
+    res.setHeader('Content-Type', 'text/html'); // (POST)
+    
+    // Send a RESPONSE
+    if (url === '/') {
+        res.write('<html>'); // (POST)
+        res.write('<body>'); // (POST)
+        res.write('<h1> Welcome to World-Cleaner</h1>'); // (POST)
+        res.write('<form action="/message" method="POST">'); // (POST)
+        res.write('<input type="text" name="message">'; // (POST)
+        res.write('</body>'); // (POST)
+        res.write('</html>'); // (POST)
+        return res.end(); // (POST)
+    }
+
+    // Terminate Server pressing Ctrl+c or 
+    // process.exit(); 
+}); 
+```
+
 
