@@ -259,7 +259,7 @@ console.log('hi!');
 // Create a local HTTP Server with NodeJS 
 // Comments step by step 
 
-// Impor HTTP core module 
+// Import HTTP core module 
 const http = require('http');
 
 // Create function 
@@ -278,7 +278,7 @@ const function = http.create.server((res, req) => {
     res.setHeader('Content-Type', 'text/html'); // (POST)
     
     // Send a RESPONSE
-    if (url === '/') {
+    if (url === '/') { // Principles of Routing
         res.write('<html>'); // (POST)
         res.write('<body>'); // (POST)
         res.write('<h1> Welcome to World-Cleaner</h1>'); // (POST)
@@ -294,4 +294,51 @@ const function = http.create.server((res, req) => {
 }); 
 ```
 
+- Streams and Buffers
+
+    1. Streams is Server RESPONSE data, like all lines that compose our first webpage.
+    2. Buffers are specific moments of streams. Note about res.on() method 
+    3. Using the above example, we test streams and buffers to understand how they work
+    4. Save User Input (Message Content) in File
+
+```js
+const fs = require('fs'); 
+const http = require('http');
+const function = htpp.create.server((res,req) => {
+    const url = req.url;
+    const method = req.method;
+
+    if (res.url === '/') {
+        res.write('<html>');       
+        res.write('<head><title>Greetings from NodeJS</title></head>');       
+        res.write('<body>');       
+        res.write('<form action="/message" method="POST">');       
+        res.write('<input type="text" name="message">');       
+        res.write('</body>');       
+        res.write('</html>');       
+        return res.end();
+    }
+    if (url === '/message' && method === 'POST') {
+    
+    // create body array 
+        const body = [];
+        req.on('data', (chunk) => {
+            console.log(chunk);
+            body.push(chunk);
+        });
+    
+    // Here is where we get the content and write to file 
+        req.on('end', () => {
+            const parsedBody = Buffer.concat(body).toString();
+            const message = parsedBody.split('=')[1];
+            fs.writeFileSync('message.txt', message);
+            console.log(parsedBody);
+    });
+    
+    res.statusCode = 302; // redirect user from /message to / 
+    res.setHeader('Location', '/');
+    return res.end(); 
+
+});
+```
 
