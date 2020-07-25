@@ -266,7 +266,7 @@ const http = require('http');
 // Some features have integrated a ETERNAL Loop-event
 // Server features is one of those. 
 
-const function = http.create.server((res, req) => {
+const server = http.create.server((res, req) => {
     // log browser object 
     // console.log(req); // Our Client REQUEST (GET)
 
@@ -304,7 +304,7 @@ const function = http.create.server((res, req) => {
 ```js
 const fs = require('fs'); 
 const http = require('http');
-const function = htpp.create.server((res,req) => {
+const server = htpp.create.server((res,req) => {
     const url = req.url;
     const method = req.method;
 
