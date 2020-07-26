@@ -358,4 +358,26 @@ req.on('end', () => {
     });
 });
 ```
+- Understanding how NodeJS works behind the scenes:
+    1. JavaScript uses a Single Thread
+    2. NodeJS only start events which are already callbacks. 
+    3. fs module uses multi-threads
+    4. The Event Loop is always on working with Timers: timeout and interval callbacks
+        - Pending callbacks:
+            1. i/o related callbacks (Input/Output: disk & network)
+        - Poll: retrieve new i/o events 
+        - check: execute setImmediate() callbacks
+        - execute all close event callbacks
+        - process exit: refs: == 0
+
+- Using the Node Modules System 
+- Simplifying the Server code example in 2 files. 
+    1. wrap route content in routes.js, from app.js
+    2. remove fs import from app.js 
+    3. remove http module const inside app.js function 
+    4. convert app.js function to es6
+    5. declare routes.js routes function using module.exports 
+    - Each file using exports is a "module"
+
+
 
