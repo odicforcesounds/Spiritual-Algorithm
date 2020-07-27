@@ -4,7 +4,7 @@
 const http = require('http');
 const fs = require('fs');
 
-const requestHandler = (req,res) => {
+const requestHandler = (req, res) => {
     const url = req.url;
     const method = req.method;
     if (url === '/') {
@@ -13,6 +13,8 @@ const requestHandler = (req,res) => {
         res.write('<body>');
         res.write('<form action="message" method="POST">');
         res.write('<input action="/message" name="message">');
+        res.write('<button type="submit">Send Message</button>');
+        res.write('</form>');
         res.write('<body>');
         res.write('</html>');
         res.end();
