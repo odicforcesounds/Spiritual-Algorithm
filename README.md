@@ -377,6 +377,7 @@ req.on('end', () => {
     3. remove http module const inside app.js function 
     4. convert app.js function to es6
     5. declare routes.js routes function using module.exports 
+
     - Each file using exports is a "module"
 
 - Errors
@@ -384,4 +385,8 @@ req.on('end', () => {
     2. Runtime Errors 
     3. Logic Errors 
 
+    - Using chromium / firefox developer tools
+    - Setup nodemon as third party packages to auto-restart node for each change 
+    - Tips and tricks with visual studio. (I wish to find the same for vim)
 
+## Document In Review 
