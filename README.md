@@ -379,5 +379,9 @@ req.on('end', () => {
     5. declare routes.js routes function using module.exports 
     - Each file using exports is a "module"
 
+- Errors
+    1. Syntax Errors (typing errors)
+    2. Runtime Errors 
+    3. Logic Errors 
 
 
