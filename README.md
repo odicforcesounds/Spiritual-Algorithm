@@ -384,4 +384,26 @@ req.on('end', () => {
     2. Runtime Errors 
     3. Logic Errors 
 
+- Installing ExpressJS
+    1. npm install express --save 
+
+```js
+const express = require('express');
+// Assign express functionality to app variable. 
+const app = express();
+// express control the middleware with the **next** function. 
+// we are adding a function as a argument 
+app.use((req, res, next) => {
+    console.log('In middleware');
+    // type next(); to continue to the next block
+    // if we don't use next() the script stops here 
+    next();
+});
+// we send a response 
+app.use((req, res, next) => {
+    console.log('Again in middleware');
+    res.send('<h1>Yeah</h1>');
+});
+app.listen(3000);
+```
 
