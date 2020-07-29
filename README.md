@@ -6,42 +6,35 @@ As described, all notes are personal, so some of the content can lead others or 
 
 Lets Dive Into the World of JavaScript
 
-1. Gettings Started
-2. JavaScript Refresh
-3. NodeJS Basics
-4. Efficient Development
-5. Using ExpressJS
-6. Templating Engines
-7. Model-View-Controller
-8. Routes and Advanced Models
-9. NodeJS + MongoDB (NoSQL)
-10. Session and Cookies
-11. Authentication
-12. Sending E-mails
-13. Using Input Validation
-14. Error Handling 
-15. File Uploads & Downloads
-16. Pagination
-17. Async Requests
-18. Handling Payments
-19. REST API 
-20. Using Async await
-21. Websockets
-22. GraphQL
-23. Deployment 
-24. Next Steps
+1. JavaScript Refresh
+2. NodeJS Basics
+3. Efficient Development
+4. Using ExpressJS
+5. Templating Engines
+6. Model-View-Controller
+7. Routes and Advanced Models
+8. NodeJS + MongoDB (NoSQL)
+9. Session and Cookies
+10. Authentication
+11. Sending E-mails
+12. Using Input Validation
+13. Error Handling 
+14. File Uploads & Downloads
+15. Pagination
+16. Async Requests
+17. Handling Payments
+18. REST API 
+19. Using Async await
+20. Websockets
+21. GraphQL
+22. Deployment 
+23. Next Steps
 
 ## Getting Started
 
 Q: What is NodeJS ? 
 - Short-Answer: JavaScript for Server Side or a Runtime for the computer. 
 - Long-Answer: V8 is the buit-in, compiler and browser interpreter for Google-Chromium, which run JavaScript for the Web. Here we have no access to the hard-disk to manipulate files ( as an example ). With NodeJS, we are able to manipulate files in our Hard-Drive, and therefor  we can develop JavaScript as an external application that will run on computers (but outside the browser). NodeJS features are written in C++ Language that compile JavaScript. V8 is the application that compile JavaScript to Machine Code and vice-versa. In the Browser, JavaScript interacts with the DOM ( Document Object Model ) that is represented by all HTML tags to structure any webpage. 
-
-    ```js
-        console.log("Hello World from NodeJS");
-        const fs = require('fs');
-        fs.writeFileSync('hello.txt', 'Hello!');
-    ```
 
 - Full Picture: Client request page-content from Domain Server 
 
@@ -169,7 +162,6 @@ const copiedPerson = {...person};
 5. Arrays
 
 ```js
-
 const todo = ['code', 'compose'];
 for (let hobby of hobbies){
     console.log(hobbies);
