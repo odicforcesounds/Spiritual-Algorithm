@@ -1,3 +1,13 @@
+const defaultResult = 0; 
+const currentResult = defaultResult;
+
+function add() {
+  currentResult = currentResult + parseInt(userInput.value);
+  outputResult(currentResult, '');
+}
+
+// addBtn.addEventListener(('click', add);
+
 const userInput = document.getElementById('input-number');
 const addBtn = document.getElementById('btn-add');
 const subtractBtn = document.getElementById('btn-subtract');
