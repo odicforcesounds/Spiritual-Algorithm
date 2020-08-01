@@ -119,34 +119,41 @@ Lets Dive into the World of **JavaScript**
 9. Dynamic Routes and Advanced Models
   - Module Introduction
   - Preparations
-10.
-11.
-12. 
-13.
-14.
-15.
-16.
-17.
-18.
-19.
-20.
-21.
-22.
-23.
-24.
-25.
-26.
-27.
-28.
-29.
-30.
-31.
-32.
-33.
-34.
-35.
-36.
-37.
-38.
-39.
-40. 
+  - Adding the Product ID to the Path
+  - Extracting Dynamic Params
+  - Loading Product Detail Data
+  - Rendering the Product Detail View
+  - Passing Data with POST Request
+  - Adding a Cart Model
+  - Using Query Params
+  - Pre-Populating the Edit Product Page
+  - Linking to the Edit Page
+  - Editing the Product Data
+  - Adding the Product Delete functionality 
+  - Deleting Cart Items
+  - Displaying Cart Items on the Cart Page
+  - Deleting Cart Items
+  Fixing a Delete Product Bug
+  - Wrap Up
+10. SQL Introduction
+11. Understanding Sequelize
+12. Working with NoSQL
+13. Working with Mongoose
+14. Sessions Cookies
+15. Adding Authentication
+16. Sending Emails
+17. Advanced Authentication
+18. Understanding Validation
+19. Error Handling 
+20. File Upload and Download
+21. Adding Pagination
+22. Understanding Async Requests
+23. Adding Payments
+24. Working with REST APIs - Basics
+25. Working with REST APIs - Practical Application
+26. Understanding Async Await in Node
+27. Understanding websockets and Socket.io
+28. Working with GraphQL
+29. Deploying our App
+30. Node as a Build Tool - Using Npm 
+31. End 
