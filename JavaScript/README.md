@@ -42,4 +42,17 @@
   - [The **typeoff** Operator](./02_Basics/02.25_README.md)
   - [Import scripts directly with **difer** and **async**](./02_Basics/02.26_README.md)
 3. Developing and Debugging 
-  - 
+  - [E fficient  Development and debugging](./03_Debugging/03.01_README.md)
+  - [Configuring IDE (vim)](./03_Debugging/03.02_README.md)
+  - [Using shortcuts](./03_Debugging/03.03_README.md)
+  - [Working with auto complete](./03_Debugging/03.04_README.md)
+  - [Finding help with MDN](./03_Debugging/03.05_README.md)
+  - [Google Correctly](./03_Debugging/03.06_README.md)
+  - [Debug JavaScript](./03_Debugging/03.07_README.md)
+  - [An Error - No Panic](./03_Debugging/03.08_README.md)
+  - [Using console.log()](./03_Debugging/03.09_README.md)
+  - [Debugging with Devtools](./03_Debugging/03.10_README.md)
+  - [Testing code directly in the devtools](./03_Debugging/03.11_README.md)
+  - [Breakpoints](./03_Debugging/03.12_README.md)
+4. Working with Control Structures (conditions)
+
