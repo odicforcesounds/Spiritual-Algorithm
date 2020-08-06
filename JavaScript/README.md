@@ -1,12 +1,11 @@
 # JavaScript for the Web
 
 - **Main JavaScript Resources**: 
-  - [ECMAScript](http://ecma-international.org/ecma-402/)
-  - [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
+- [ECMAScript](http://ecma-international.org/ecma-402/)
+- [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
 
- [Index](./README.md)
 
-1. Introduction
+1. **Introduction**
   - [what is JavaScript](./01_Introduction/01.1_README.md)
   - [JavaScript in action](./01_Introduction/01.2_README.md)
   - [How JavaScript is Executed](./01_Introduction/01.3_README.md)
@@ -15,7 +14,7 @@
   - [JavaScript vs Java](./01_Introduction/01.6_README.md)
   - [A Brief History of JavaScript](./01_Introduction/01.7_README.md)
   - [Setting up a Development Enviroment](./01_Introduction/01.8_README.md)
-2. Basics
+2. **Basics**
   - [Setting up the Project](./02_Basics/02.01_README.md)
   - [Introduction to Variables and Constants](./02_Basics/02.02_README.md)
   - [Declaring and Defining Variables](./02_Basics/02.03_README.md)
@@ -41,7 +40,7 @@
   - [Undefined, null and NaN](./02_Basics/02.24_README.md)
   - [The **typeoff** Operator](./02_Basics/02.25_README.md)
   - [Import scripts directly with **difer** and **async**](./02_Basics/02.26_README.md)
-3. Developing and Debugging 
+3. **Developing and Debugging**
   - [E fficient  Development and debugging](./03_Debugging/03.01_README.md)
   - [Configuring IDE (vim)](./03_Debugging/03.02_README.md)
   - [Using shortcuts](./03_Debugging/03.03_README.md)
@@ -54,5 +53,4 @@
   - [Debugging with Devtools](./03_Debugging/03.10_README.md)
   - [Testing code directly in the devtools](./03_Debugging/03.11_README.md)
   - [Breakpoints](./03_Debugging/03.12_README.md)
-4. Working with Control Structures (conditions)
-
+4. **Working with Control Structures (conditions)**
