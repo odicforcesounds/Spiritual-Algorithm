@@ -54,3 +54,36 @@
   - [Testing code directly in the devtools](./03_Debugging/03.11_README.md)
   - [Breakpoints](./03_Debugging/03.12_README.md)
 4. **Working with Control Structures (conditions)**
+  - Introduction: **if** statement and boolean Operators
+  - Using **if** statement
+  - Working with **if**, **else** and **else if**
+  - Beware when comparing Objects and Arrays
+  - The Logical **AND** and **OR** Operators
+  - Understanding Operator Precedence
+  - Beyond true and false, Truthy and Falsy Values
+  - Setting up a Bigger Example ( project )
+  - Adding a Function
+  - Using **if** statement to check Condition
+  - Adding more **if** statements and functionality
+  - Controlling the condition (without boolean operators )
+  - Validating User Input 
+  - Utilizing Global Constants and Identifiers in Conditions
+  - Adding a Log 
+  - Introduction to Ternary Operator
+  - A Bit of theory statements and Expressions
+  - Logical Operator tricks and shorthands
+  - Working with switch case
+  - Introduction to loops
+  - The **for** Loop
+  - The **for of** Loop
+  - The **for in** Loop
+  - Controlling Loops with **break**
+  - Controlling Iterations with **continue** 
+  - More control with labeled statements
+  - Error handling with **try-catch** 
+  - Throwing Custom Errors
+  - Working with **try-catch** to catch and handle errors
+5. **Behind the Scenes and the weird past (ES3, ES5 and ES6+)**
+    
+
+ 
