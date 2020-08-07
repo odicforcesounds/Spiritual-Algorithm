@@ -54,12 +54,12 @@
   - [Testing code directly in the devtools](./03_Debugging/03.11_README.md)
   - [Breakpoints](./03_Debugging/03.12_README.md)
 4. **Working with Control Structures (conditions)**
-  - Introduction: **if** statement and boolean Operators
-  - Using **if** statement
-  - Working with **if**, **else** and **else if**
-  - Beware when comparing Objects and Arrays
-  - The Logical **AND** and **OR** Operators
-  - Understanding Operator Precedence
+  - [Introduction: **if** statement and boolean Operators](./04_ControlStructures/04.01_README.md)
+  - [Using **if** statement](./04_ControlStructures/04.02_README.md)
+  - [Working with **if**, **else** and **else if**](./04_ControlStructures/04.03_README.md)
+  - [Beware when comparing Objects and Arrays](./04_ControlStructures/04.04_README.md)
+  - [The Logical **AND** and **OR** Operators](./04_ControlStructures/04.05_README.md)
+  - [Understanding Operator Precedence](./04_ControlStructures/04.06_README.md)
   - Beyond true and false, Truthy and Falsy Values
   - Setting up a Bigger Example ( project )
   - Adding a Function
@@ -84,6 +84,3 @@
   - Throwing Custom Errors
   - Working with **try-catch** to catch and handle errors
 5. **Behind the Scenes and the weird past (ES3, ES5 and ES6+)**
-    
-
- 
