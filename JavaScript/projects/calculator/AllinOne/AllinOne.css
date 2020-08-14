@@ -1,0 +1,32 @@
+body{
+  background-color: darkblue;
+  text-align: center;
+}
+input {
+  width:150px;
+  height: 100px;
+  font-size: 75px;
+  border-radius:10px;
+  margin:10px;
+  background-color: #000;
+  color:#fff;
+  border-style: none;
+}
+
+#numbers{
+  width:675px;
+  height: 100px;
+  color:yellow;
+}
+
+#operator{
+  color:orange;
+}
+
+#reset{
+  color:red;
+}
+
+#equal{
+  color:aqua;
+}
