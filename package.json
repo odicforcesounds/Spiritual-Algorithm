@@ -1,0 +1,29 @@
+{
+  "name": "spiritual-algorithm",
+  "version": "0.0.0",
+  "description": "File used to describe any JavaScript project",
+	"private":true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/odicforcesounds/Spiritual-Algorithm.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "NodeJS",
+    "TypeScript"
+  ],
+  "author": {
+		"name":"OscarFM",
+		"email":"@odicforcesounds.com",
+		"url":"https://wiki.odicforcesounds.com/docs"
+	},
+  "license": "OdicforceSounds Eternal License",
+  "bugs": {
+    "url": "https://github.com/odicforcesounds/Spiritual-Algorithm/issues"
+  },
+  "homepage": "https://github.com/odicforcesounds/Spiritual-Algorithm#readme",
+	"browserslist": ["> 1%", "last 2 version", "not ie <= 6"]
+}
